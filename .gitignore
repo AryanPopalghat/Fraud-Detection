@@ -1,0 +1,5 @@
+venv
+.env
+myenv
+resnet50-19c8e357.pth
+Epoch_17.pt

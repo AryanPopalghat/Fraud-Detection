@@ -1,0 +1,80 @@
+INFO 2024-11-29 03:52:12 _internal.py: 97]  * Restarting with watchdog (windowsapi)
+DEBUG 2024-11-29 03:52:16 cmd.py: 1253] Popen(['git', 'version'], cwd=E:\Aiwi\github upload\Fake_Face_detection, stdin=None, shell=False, universal_newlines=False)
+DEBUG 2024-11-29 03:52:16 cmd.py: 1253] Popen(['git', 'version'], cwd=E:\Aiwi\github upload\Fake_Face_detection, stdin=None, shell=False, universal_newlines=False)
+DEBUG 2024-11-29 03:52:17 auth.py: 50] Trying paths: ['C:\\Users\\Hp\\.docker\\config.json', 'C:\\Users\\Hp\\.dockercfg']
+DEBUG 2024-11-29 03:52:17 auth.py: 54] Found file at path: C:\Users\Hp\.docker\config.json
+DEBUG 2024-11-29 03:52:17 auth.py: 242] Found 'credsStore' section
+WARNING 2024-11-29 03:52:20 _internal.py: 97]  * Debugger is active!
+INFO 2024-11-29 03:52:20 _internal.py: 97]  * Debugger PIN: 770-194-117
+INFO 2024-11-29 03:52:39 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:52:39 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:52:39 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:52:39 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:52:39 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:52:39 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:52:46 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:52:46] "POST /upload_claim HTTP/1.1" 200 -
+INFO 2024-11-29 03:53:42 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:53:42 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:53:43 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:53:43 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:53:43 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:53:43 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:53:46 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:46] "POST /upload_test HTTP/1.1" 200 -
+INFO 2024-11-29 03:53:49 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:49] "[31m[1mPOST /get_presigned_url HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:53:49 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:49] "[31m[1mPOST /upload_file HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:53:58 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:58] "POST /evaluate HTTP/1.1" 200 -
+INFO 2024-11-29 03:53:58 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:58] "GET /static/6.jpeg HTTP/1.1" 200 -
+INFO 2024-11-29 03:53:59 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:53:59] "[35m[1mGET /get_all_files HTTP/1.1[0m" 500 -
+INFO 2024-11-29 03:54:19 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:54:19] "GET / HTTP/1.1" 200 -
+INFO 2024-11-29 03:54:30 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:54:30 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:54:31 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:54:31 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:54:31 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:54:31 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:54:36 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:54:36] "POST /upload_claim HTTP/1.1" 200 -
+INFO 2024-11-29 03:55:29 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:55:29 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:55:29 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:55:29 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:55:29 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:55:29 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:55:32 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:32] "POST /upload_test HTTP/1.1" 200 -
+INFO 2024-11-29 03:55:35 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:35] "[31m[1mPOST /get_presigned_url HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:55:35 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:35] "[31m[1mPOST /upload_file HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:55:39 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:39] "POST /evaluate HTTP/1.1" 200 -
+INFO 2024-11-29 03:55:39 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:39] "GET /static/7.jpeg HTTP/1.1" 200 -
+INFO 2024-11-29 03:55:40 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:55:40] "[35m[1mGET /get_all_files HTTP/1.1[0m" 500 -
+INFO 2024-11-29 03:56:08 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:56:08 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:56:08 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:56:08 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:56:08 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:56:08 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:56:11 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:11] "POST /upload_test HTTP/1.1" 200 -
+INFO 2024-11-29 03:56:15 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:15] "[31m[1mPOST /get_presigned_url HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:56:15 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:15] "[31m[1mPOST /upload_file HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:56:19 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:19] "POST /evaluate HTTP/1.1" 200 -
+INFO 2024-11-29 03:56:19 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:19] "GET /static/1.jpeg HTTP/1.1" 200 -
+INFO 2024-11-29 03:56:20 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:20] "[35m[1mGET /get_all_files HTTP/1.1[0m" 500 -
+INFO 2024-11-29 03:56:27 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:56:27] "GET / HTTP/1.1" 200 -
+INFO 2024-11-29 03:57:05 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:57:05 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:57:06 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:57:06 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:57:06 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:57:06 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:57:12 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:12] "POST /upload_claim HTTP/1.1" 200 -
+INFO 2024-11-29 03:57:35 FaceDetModelLoader.py: 16] Start to analyze the face detection model, model path: models, model category: face_detection，model name: face_detection_1.0
+INFO 2024-11-29 03:57:35 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:57:35 FaceDetModelLoader.py: 34] Successfully loaded the face detection model!
+INFO 2024-11-29 03:57:35 FaceAlignModelLoader.py: 16] Start to analyze the face landmark model, model path: models, model category: face_alignment，model name: face_alignment_1.0
+INFO 2024-11-29 03:57:35 BaseModelLoader.py: 34] Successfully parsed the model configuration file meta.json!
+INFO 2024-11-29 03:57:35 FaceAlignModelLoader.py: 29] Successfully loaded the face landmark model!
+INFO 2024-11-29 03:57:37 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:37] "POST /upload_test HTTP/1.1" 200 -
+INFO 2024-11-29 03:57:41 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:41] "[31m[1mPOST /get_presigned_url HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:57:41 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:41] "[31m[1mPOST /upload_file HTTP/1.1[0m" 400 -
+INFO 2024-11-29 03:57:51 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:51] "POST /evaluate HTTP/1.1" 200 -
+INFO 2024-11-29 03:57:51 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:51] "GET /static/21.jpg HTTP/1.1" 200 -
+INFO 2024-11-29 03:57:52 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:57:52] "[35m[1mGET /get_all_files HTTP/1.1[0m" 500 -
+INFO 2024-11-29 03:58:52 _internal.py: 97] 127.0.0.1 - - [29/Nov/2024 03:58:52] "GET / HTTP/1.1" 200 -

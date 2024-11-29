@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verifye Analysis</title>
+    <style>
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+        details {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+        }
+        summary {
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+        #fileStatusList {
+            text-align: center;
+            padding-top: 10px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deepfake Analysis Result</h1>
+        
+        <img src="{{ url_for('static',filename=result['file_path']) }}">
+        <br>
+        <h5>{{fileName}}</h5>
+        <br>
+        <p>Verifye's proprietary image analysis model: {{ result['image_status'] }}</p>
+
+        <!-- Centered Dropdown for Reality Defender Results -->
+        <details>
+            <summary>See more...</summary>
+            <div id="fileStatusList"></div>
+        </details>
+        
+        <a href="/">Go Back</a>
+    </div>
+    <script>
+        async function fetchFileStatuses() {
+            try {
+                // Fetch file statuses from the server
+                const response = await fetch('/get_all_files');
+                const data = await response.json();
+    
+                // Check if the response is successful
+                if (response.ok) {
+                    const files = data.files;
+    
+                    // Get the fileStatusList div
+                    const fileStatusList = document.getElementById('fileStatusList');
+                    fileStatusList.innerHTML = ''; // Clear previous content
+    
+                    if (files.length > 0) {
+                        const file = files[0]; // Get the first file
+                        const fileName = file.fileName;
+                        const status = file.status;
+                        let models = file.models;
+    
+                        models.sort((a, b) => b.score - a.score);
+                        models = models.slice(0, 5);
+    
+                        // Create a new div element for the first file status
+                        const fileStatusDiv = document.createElement('div');
+                        fileStatusDiv.innerHTML = `<strong>File:</strong> ${fileName}, <strong>Status:</strong> ${status}`;
+                        
+                        models.forEach(model => {
+                            const modelDiv = document.createElement('div');
+                            modelDiv.innerHTML = `&nbsp;&nbsp;&nbsp;<strong>Model:</strong> ${model.name}, <strong>Status:</strong> ${model.status}, <strong>Score:</strong> ${model.score}`;
+                            fileStatusDiv.appendChild(modelDiv);
+                        });
+    
+                        // Append the div to the fileStatusList div
+                        fileStatusList.appendChild(fileStatusDiv);
+                    }
+                } else {
+                    // Log error message if response is not successful
+                    console.error('Failed to fetch file statuses:', data.error);
+                }
+            } catch (error) {
+                // Log any errors that occur during the fetch operation
+                console.error('Error fetching file statuses:', error);
+            }
+        }
+    
+        // Call the fetchFileStatuses function when the page loads
+        window.onload = fetchFileStatuses;
+    </script>
+</body>
+</html>

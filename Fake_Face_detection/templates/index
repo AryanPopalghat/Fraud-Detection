@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Verification</title>
+</head>
+<body>
+    <h1>Face Verification</h1>
+    <form action="/upload_claim"  method="post" enctype="multipart/form-data">
+        <h2>Upload Claim Images (5 images)</h2>
+        <p>(Note: If you want to test a image in which person is wearing something (ex. goggles, glasses, etc.), then please also upload the real image of the person wearing the similar thing, otherwise you may get wrong results. Similarly if in a test image, person has beard/ moustache, then please try to also upload the real image in which person has beard or moustache respectively. And if your test image is of clean shaved person, then please upload atleast one real clean shaved image of the same person. This will give you the accurate results.)</p>
+        <input type="file" name="claim" multiple required>
+        <input type="submit" value="Upload Claim Images">
+    </form>
+    <form action="/upload_test" id="uploadForm" method="post" enctype="multipart/form-data">
+        <h2>Upload Test Image</h2>
+        <label for="file">Choose file:</label>
+        <input type="file" name="test" id="file" required>
+        <br><br>
+        
+        <!--<input type="submit" value="Upload Test Image">-->
+        <br>
+        <label for="fileName">File Name:</label>
+        <input type="text" id="fileName" name="fileName" required>
+        
+        <input type="submit" value="Upload Test Image">
+       
+    </form>
+    <form action="/evaluate" method="post">
+        <h2>Evaluate</h2>
+        <input type="submit" value="Evaluate">
+    </form>
+
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData();
+            const fileInput = document.getElementById('file');
+            const file = fileInput.files[0];
+            const fileNameInput = document.getElementById('fileName');
+            const fileName = fileNameInput.value.trim();
+
+            if (!file) {
+                alert('Please select a file to upload.');
+                return;
+            }
+
+            const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif']; // Add allowed extensions here
+            const fileExtension = file.name.split('.').pop().toLowerCase();
+
+            if (!allowedExtensions.includes(fileExtension)) {
+                alert(`File extension not allowed. Allowed extensions are: ${allowedExtensions.join(', ')}`);
+                return;
+            }
+
+            if (!fileName) {
+                alert('Please enter a file name.');
+                return;
+            }
+
+            formData.append('file', file);
+            formData.append('fileName', fileName);
+
+            try {
+                const response = await fetch('/upload_file', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    alert('File uploaded successfully!');
+                   // fetchFileStatuses(); // Fetch the updated list after upload
+                } else {
+                    alert(`Failed to upload file: ${result.error}`);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while uploading the file.');
+            }
+        };
+
+       
+
+        
+    </script> 
+</body>
+</html>

@@ -1,0 +1,5 @@
+# This is a sample configuration file
+# Add relevant configurations as needed
+crop:
+  threshold: 0.8
+  max_size: 2048

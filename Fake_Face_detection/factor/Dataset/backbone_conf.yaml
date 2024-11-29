@@ -1,0 +1,11 @@
+# Configuration for backbone
+model:
+  type: resnet50
+  pretrained: True
+
+input:
+  size: 224
+
+transform:
+  resize: 224
+  to_tensor: True
